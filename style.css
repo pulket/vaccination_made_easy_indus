@@ -15,8 +15,12 @@ width: 50%;
 
     
 }
+.container{
+  background-image: "dv2.png";
+}
+
 .h3{
-  text-align: right;
+  text-align: center;
 }
 .pk{
   text-align: center;
