@@ -8,12 +8,16 @@
 
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="player.css">
+  <script type="text/javascript" src="player.js"></script>
   <title>Registration!</title>
 </head>
 
 <body>
   <div class="header">
-    <a href="index.html" class="logo"> <img style="width: 7%;" src="logo.png" alt="Indus-Ivaccinated" class="Indus"> </a>
+    <a href="index.html" class="logo"> <img style="width: 7%;" src="logo.png" alt="Indus-Ivaccinated" class="Indus">
+    </a>
     <div class="header-right">
       <a class="success" href="index.html">Home</a>
       <a href="search.html">search slots</a>
@@ -22,35 +26,53 @@
     </div>
   </div>
 
-<div class="block"></div>
-<div class="brother"> <img src="avtar.jpg" alt="pulkit">
-<h4>pulkit
-  <br>Indian institute of information technology surat
-</h4></div>
- <div class="brother"><img src="avtar.jpg" alt="aakash">
-  <h4>Aakash <br>Indian institute of information technology surat
-   </h4>
-</div>
- <div class="brother"><img src="avtar.jpg" alt="abhinav">
-<h4>Abhinav <br>Indian institute of information technology surat</h4></div>
+  <div class="block"></div>
+  <div class="brother"> <img src="avtar.jpg" alt="pulkit">
+    <h4>pulkit
+      <br>Indian institute of information technology surat
+    </h4>
+  </div>
+  <div class="brother"><img src="avtar.jpg" alt="aakash">
+    <h4>Aakash <br>Indian institute of information technology surat
+    </h4>
+  </div>
+  <div class="brother"><img src="avtar.jpg" alt="abhinav">
+    <h4>Abhinav <br>Indian institute of information technology surat</h4>
+    <div id="wrapper">
+      <div id="player">
+          <audio src="music/01 Paawan Hai Is Desh Ki Maati.mp3" id="music_player">
+              <source src="music/01 Paawan Hai Is Desh Ki Maati.mp3">
+          </audio>
+          <input type="image" src="image/play.png" onclick="play_aud()" id="play_button">
+          <input type="image" src="image/pause.png" onclick="pause_aud()" id="play_button">
+          <input type="image" src="image/stop.png" onclick="stop_aud()" id="play_button">
+          <img src="image/volume.jpg" id="vol_img" alt="">
+          <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+      </div>
+  </div>
 
 
 
-<h2>    The lives of millions of children have been saved, millions have the chance of a longer healthier life, a greater chance to
-   learn, to play, to read and write, to move around freely without suffering.
+  <h2> The lives of millions of children have been saved, millions have the chance of a longer healthier life, a greater
+    chance to
+    learn, to play, to read and write, to move around freely without suffering.
 
+    <br>
+    <br>
+    Nelson Mandela
+
+    Winner of the Nobel Peace Prize, 1993
+  </h2>
+  
+  <br><br><br><br><br>
   <br>
-<br>
-Nelson Mandela
+  <br><br><br><br><br>
 
-Winner of the Nobel Peace Prize, 1993</h2>
-<p>The footer is placed at the bottom of the page.</p>
-<br><br><br>
-<br>
-
-<div class="footer">
-<p>"All rights reserved"<hr>Hey! you are awesome thanks for visiting <br> Team-Indus</p>
-</div>
+  <div class="footer">
+    <p>"All rights reserved"
+      <hr>Hey! you are awesome thanks for visiting <br> Team-Indus
+    </p>
+  </div>
 </body>
-</html>
 
+</html>
